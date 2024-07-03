@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@DarkPrimary: #2A254B;
+@White: #FFFFFF;
+@LightGray: #F9F9F9;
+@fontComfortaa: "Comfortaa", sans-serif;
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+    /*NAV-CONTAINER START*/
+.nav-container{
+	&__topBlock{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+	}
+
+	&__title{
+      font-size: 24px;
+		font-family: @fontComfortaa;
+	}
+
+	&__menu{
+      display: flex;
+		justify-content: center;
+		font-family: @fontComfortaa;
+		font-size: 16px;
+		margin-top: 20px;
+		margin-left: 15px;	
+	}
+
+	&__menuItem{	
+      margin-right: 35px;	
+		:hover{
+			color:  #0e0770;
+	   }		
+   }
+
+	&__menuItem a{
+		text-decoration: none;	
+		color: #726E8D;
+	}
+}
+   /*NAV-CONTAINER STOP*/
+
+   /*MAIN-CONTAINER START*/
+.main-container{
+	width: 1440px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.banner{
+   display: flex;
+   justify-content: space-between;
+   background-color: @DarkPrimary;
+	box-shadow: 15px 17px 22px 7px rgba(54, 165, 182, 0.25);
+	width: 1280px;
+	margin: 0 auto;
+
+   &__leftBlock{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 60px;
+		font-family: @fontComfortaa;
+	}
+
+   &__topContent{
+		font-size: 32px;
+		color: @White;
+      line-height: 44.8px;
+	}
+
+	&__topContentButton{
+		margin-top: 41px;
+		:hover{
+			color:  #0e0770;	
+	   }		
+	}
+
+	&__topContentButton a{
+		font-size: 16px;
+		color: @White;
+		text-decoration: none;
+		background-color: #F9F9F926;
+		padding: 16px 32px 16px 32px;	
+	}
+
+	&__bottomContent p{
+		font-size: 16px;
+		color: @White;
+		line-height: 27px;
+	}
+}
+.brandDifferent{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 60px;
+	font-family: @fontComfortaa;	
+	color: @DarkPrimary;
+	height: 355px;
+	width: 1280px;
+
+	&__topBlock{
+		display: flex;
+		justify-content: center;
+		font-size: 24px;	
+		padding-top: 60px;
+	}	
+
+	&__bottomBlock{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+
+	&__menu{
+		h4{
+			font-size: 18px;
+			margin: 20px 0 20px 0;
+		}
+		p{
+			font-size: 15px;
+			line-height: 24px;
+		}
+	}
+}
+.newCeramics{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1280px;
+	height: 761px;
+	font-family: @fontComfortaa;	
+	color: @DarkPrimary;
+
+	&__title{
+		font-size: 32px;
+		margin-top: 80px;
+	}
+
+	&__productCards{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+
+	&__cards{
+		line-height: 38px;
+		box-shadow: 0px 0px 13px 7px rgba(54, 165, 182, 0.25);
+		h4{
+         font-size: 20px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+
+	&__bottomButton{
+		display: flex;
+		justify-content: center;
+		margin-top: 47px;
+		:hover{
+		background-color:  rgba(135, 205, 213, 0.74);
+		transform: scale(1.3);	
+		transition: 1.2s;
+	   }		
+		a{
+		   text-decoration: none;
+			font-size: 16px;
+			background-color: @LightGray;
+			color: @DarkPrimary;
+			padding: 16px 32px 16px 32px;
+		}		
+	}
+}
+.popularProducts{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1280px;
+	height: 744px;
+	font-family: @fontComfortaa;	
+	color: @DarkPrimary;
+
+	&__title{
+		font-size: 32px;
+		margin-top: 64px;
+	}
+
+	&__productCards{
+      display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 35px;
+	}
+
+	&__cards{
+		line-height: 38px;
+		box-shadow: 0px 0px 13px 7px rgba(54, 165, 182, 0.25);
+		h4{
+         font-size: 20px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+
+	&__bottomButton{
+		display: flex;
+		justify-content: center;
+		margin-top: 47px;
+		:hover{
+		background-color:  rgba(135, 205, 213, 0.74);
+		transform: scale(1.3);	
+		transition:  0.5s;	
+		transition-timing-function: steps(2);
+	   }		
+		a{
+		   text-decoration: none;
+			font-size: 16px;
+			background-color: @LightGray;
+			color: @DarkPrimary;
+			padding: 16px 32px 16px 32px;
+		}		
+	}
+}
+
+.sign-upEmail{
+	margin: 0 auto;
+	height: 481px;
+	width: 1440px;
+	font-family: @fontComfortaa;	
+	background-color: @LightGray;
+	display: flex;
+	align-items: center;
+
+   &__inner{
+      margin: 52px 82px 52px 82px;
+		background-color: white;
+		width: 1273px;
+		height: 364px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
+
+	&__innerTitle{
+		margin-top: 68px;
+		font-size: 36px;
+		color: @DarkPrimary;
+	}
+
+	&__innerText{
+	   font-size: 16px;
+		color: @DarkPrimary;
+		line-height: 24px;
+		margin-top: 25px;
+		text-align: center;
+	}	
+	
+	&__innerEmailForm{
+      width: 472px;
+		height: 56px;
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+		box-shadow: 0px 0px 23px 7px rgba(138, 149, 168, 0.25);
+	}
+
+   &__emailForm{
+      width: 354px;
+		background-color: @LightGray;
+		font-family: @fontComfortaa;
+		border: none;
+		outline: none;
+		font-size: 16px;	
+		color: #241880d4;	
+		padding-left: 25px;
+		&::placeholder{
+			color: rgb(217, 221, 221);
+		}
+	}
+
+	&__btn{
+		width: 118px;
+		background-color: @DarkPrimary;
+		border: none;
+		font-family: @fontComfortaa;
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 16px;
+		}
+		:hover{
+			color:  #5d56c1;	
+	   }		
+	}
+}	
+
+.brandFeatures{
+	margin: 0 auto;
+	height: 603px;
+	width: 1440px;
+	font-family: @fontComfortaa;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	&__leftContent{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__topInfo{
+		margin: 70px 90px 0 80px;
+		h3{
+			font-size: 24px;
+			line-height: 33px;
+			letter-spacing: -1.3px;
+			margin-bottom: 35px;
+		}
+		p{
+			font-size: 14px;
+			line-height: 21.6px;
+			letter-spacing: -0.1px;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__contactButton{
+		margin: 0 0 72px 84px;
+		display: flex;
+		justify-content: flex-start;	
+		:hover{
+			background-color:  rgba(200, 150, 108, 0.849);
+			transform: translate(0px, -15px);
+			transition: 0.7s;
+			}		
+		a{
+			padding: 20px 32px 20px 32px;
+			background-color: @LightGray;
+			text-decoration: none;
+			font-size: 15px;
+			color: @DarkPrimary;		
+		}
+	}
+}
+
+  
+  
+
